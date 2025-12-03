@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sign Now to set your Appointment</h1>
+    </header>
+    <form>
+      <label id="Name" for="Name">Name</label>
+      <input
+        type="text"
+        name="Name"
+        id="Name"
+        placeholder="Enter Your Name"
+        required
+      />
+      <br />
+      <label id="Phone Number"> Phone Number</label>
+      <span>+34</span>
+      <input
+        type="tel"
+        id="Phone Number"
+        name="Phone"
+        placeholder="612345678"
+        maxlength="9"
+        pattern="[0-9]{9}"
+        required
+      />
+      <br />
+      <label id="email">Email</label>
+      <input type="email" id="email" placeholder="Please Insert your Email" />
+      <br />
+      <label>How did you know us?</label>
+      <ul>
+        <li>
+          <input type="checkbox" id="facebook" name="source" value="Facebook" />
+          <label for="facebook">Facebook</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            id="instagram"
+            name="source"
+            value="Instagram"
+          />
+          <label for="instagram">Instagram</label>
+        </li>
+        <li>
+          <input type="checkbox" id="twitter" name="source" value="Twitter" />
+          <label for="twitter">Twitter</label>
+        </li>
+        <li>
+          <input type="checkbox" id="friend" name="source" value="Friend" />
+          <label for="friend">Network</label>
+        </li>
+      </ul>
+      <label id="Date of Appointment">Date of Appointment</label>
+      <input
+        type="date"
+        id="Date Time for Appointment"
+        min="2025-12-03"
+        required
+      />
+      <br />
+      <label for="Submit"></label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
